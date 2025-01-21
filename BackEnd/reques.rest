@@ -14,3 +14,14 @@ Content-Type: application/json
 }
 
 ###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+  "name": "Anjes",
+  "email": "anjes@example.com",
+  "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/2

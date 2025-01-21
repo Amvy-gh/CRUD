@@ -33,7 +33,7 @@ export const createUser = async(req, res) => {
 
 export const updateUser = async(req, res) => {
     try {
-        await User.update(req.body{
+        await User.update(req.body,{
             where: {
                 id: req.params.id
             }
