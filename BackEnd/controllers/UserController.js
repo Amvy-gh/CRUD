@@ -8,3 +8,25 @@ export const getUsers = async(req, res) => {
         console.log(error.message);
     }
 }
+
+export const getUsersById = async(req, res) => {
+    try {
+        const response = await User.findOne({
+            where: {
+                id: req.params.id
+            }
+        });
+        res.status(200).json(response);
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+export const createUser = async(req, res) => {
+    try {
+        await User.create(req.body);
+        res.status(201).json({ message: 'User created successfully' });
+    } catch (error) {
+        console.log(error.message);
+    }
+}
