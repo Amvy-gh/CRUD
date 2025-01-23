@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import userRoute from  "./routes/UserRoute.js";
-;
 
 const app = express();
 app.use(cors());
