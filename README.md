@@ -80,7 +80,7 @@ backend/
 ├── routes/
 │   └── UserRoute.js        # User-related routes
 │
-├── controllers/             # Request handlers
+├── controllers/            # Request handlers
 │   └── UserController.js   # User controller logic
 │
 └── models/                 # Data models
